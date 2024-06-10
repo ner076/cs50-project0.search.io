@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.header, .header-menu {
+.header, .header-menu, .header-advanced {
   display: flex;
   align-items: center;
 }
@@ -27,6 +27,13 @@ a:hover {
   text-decoration: underline;
 }
 
+
+.header-advanced {
+  height: 50px;
+  padding: 16px 24px 16px 24px;
+}
+
+
 .search-container {
   display: flex;
   flex-direction: column;
@@ -48,6 +55,13 @@ a:hover {
 .search-container .search-input input {
   border: none;
   border-radius: 24px;
+}
+
+.search-container .logo-subtext {
+  color: #4285f4;
+  position: relative;
+  left: 110px;
+  top: -18px;
 }
 
 .search-button {
@@ -86,14 +100,18 @@ input[type=submit]:hover {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
 }
 
-input.blue-button {
-  background-color: dodgerblue;
-  color: white;
-  font-size: smaller;
-  max-width: 200px;
-  border-radius: 0px;
-  border: 1px solid #156bbd;
-  float: right;
-  padding: 10px 2px;
-  margin: 0;
+
+.page-title {
+  padding: 25px 35px 25px 35px;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.page-title label {
+  font-size: 20px;
+  color: #d93025;
+}
+
+.advanced-search-container {
+  display: flex;
+  padding: 35px;
 }
