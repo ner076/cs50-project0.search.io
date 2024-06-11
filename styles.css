@@ -4,11 +4,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.header, .header-menu, .header-advanced {
+.header, .header-menu, .logo-header, .header-advanced {
   display: flex;
   align-items: center;
 }
-.header a, .header-menu a {
+.header a, .header-menu a, .header-advanced a, .logo-header a {
   color: #1f1f1f;
   padding: 10px;
   text-decoration: none;
@@ -112,6 +112,59 @@ input[type=submit]:hover {
 }
 
 .advanced-search-container {
+  margin: 50px 40px;
+}
+
+.advanced-search-container label {
+  display: inline-block;
+  width: 16%;
+  font-size: 20px;
+}
+
+.advanced-search-container .spacing-area {
+  display: inline-block;
+  width: 50%;
+}
+
+.advanced-search-container .input-group {
   display: flex;
-  padding: 35px;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.advanced-search-container .input-group label {
+  width: 16%;
+  font-size: 14px;
+}
+
+.advanced-search-container .input-group input[type=text] {
+  width: 49%;
+  padding: 8px;
+}
+
+.advanced-search-container .input-group .to-do-block {
+  font-size: 11px;
+  width: 30%;
+  margin-left: 1%;
+}
+
+.advanced-search-container .input-group .to-do-block .monospace {
+  font-family: monospace;
+}
+
+.advanced-search-container .input-group .advanced-button {
+  width: 50%;
+}
+
+input.search-button {
+  background-color: dodgerblue;
+  color: white;
+  font-size: smaller;
+  max-width: 200px;
+  border-radius: 4px;
+  border: 1px solid #156bbd;
+  float: right;
+  padding: 10px 2px;
+  margin: 0;
 }
